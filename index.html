@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <title>Nebbish Notes</title>
+  <link href="main.css" rel="stylesheet">
+  <script src="main.js"></script>
+</head>
+<body ng-controller='MainCtrl'>
+  <h1>NebbishNotes</h1>
+  <p ng-cloak>{{testVar}}</p>
+
+  <form id="todo-form" ng-submit="addData()">
+    <input placeholder="Nebbish things" ng-model="newData" autofocus>
+  </form>
+  <button ng-click="addData()">Submit</button>
+
+  <ul ng-cloak>
+    <li ng-repeat="item in data">
+      {{item.$value}}
+    </li>
+  </ul>
+</body>
+</html>
