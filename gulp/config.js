@@ -1,4 +1,4 @@
-var dest = "./dist";
+var dest = './dist';
 var src = './src';
 
 module.exports = {
@@ -9,7 +9,7 @@ module.exports = {
     }
   },
   sass: {
-    src: src + "/styles/*.{sass,scss}",
+    src: src + '/styles/*.{sass,scss}',
     dest: dest,
     settings: {
       // Required if you want to use SASS syntax
@@ -19,14 +19,14 @@ module.exports = {
     }
   },
   lint: {
-	src: src + "/js/**/*.js"
+	src: src + '/js/**/*.js'
   },
   images: {
-    src: src + "/images/**",
-    dest: dest + "/images"
+    src: src + '/images/**',
+    dest: dest + '/images'
   },
   markup: {
-    src: [src + "/views/**/*.html", src + "/index.html"],
+    src: [src + '/views/**/*.html', src + '/index.html'],
     dest: dest
   },
   browserify: {
