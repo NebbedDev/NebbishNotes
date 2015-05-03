@@ -1,8 +1,10 @@
 'use strict';
 
 var angular = require('angular');
-var app = angular.module('myApp', []);
+var angularfire = require('angularfire');
+
+var app = angular.module('myApp', [angularfire]);
 
 var MainCtrl = require('./controllers/MainCtrl');
 
-app.controller('MainCtrl', ['$scope', MainCtrl]);
+app.controller('MainCtrl', ['$scope', '$firebaseArray', MainCtrl]);

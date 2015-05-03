@@ -6,6 +6,19 @@
 <body ng-controller='MainCtrl'>
   <h1>NebbishNotes</h1>
   <p>{{testVar}}</p>
+
+  <form id="todo-form" ng-submit="addData()">
+    <input placeholder="Nebbish things" ng-model="newData" autofocus>
+  </form>
+  <button ng-click="addData()">Submit</button>
+
+  <ul>
+    <li ng-repeat="item in data">
+      {{item.$value}}
+    </li>
+  </ul>
+
+
   <script src="main.js"></script>
 </body>
 </html>
