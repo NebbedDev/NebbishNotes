@@ -40,6 +40,9 @@ module.exports = {
       require: ['jquery', 'underscore']
     }]
   },
+  clean: {
+    src: dest
+  },
   production: {
     cssSrc: dest + '/*.css',
     jsSrc: dest + '/*.js',
